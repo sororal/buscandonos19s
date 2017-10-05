@@ -1,0 +1,481 @@
+<%= form_for([@dataset, @dataset.people.build]) do |form| %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :person_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_name %>
+    <%= form.text_field :second_name, id: :person_second_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_apellido %>
+    <%= form.text_field :first_apellido, id: :person_first_apellido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_apellido %>
+    <%= form.text_field :second_apellido, id: :person_second_apellido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date, id: :person_birth_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_country %>
+    <%= form.text_field :birth_country, id: :person_birth_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_state %>
+    <%= form.text_field :birth_state, id: :person_birth_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nationality %>
+    <%= form.text_field :nationality, id: :person_nationality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alias %>
+    <%= form.text_field :alias, id: :person_alias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.text_field :sex, id: :person_sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :person_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexual_orientation %>
+    <%= form.text_field :sexual_orientation, id: :person_sexual_orientation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexchange_surgery %>
+    <%= form.check_box :sexchange_surgery, id: :person_sexchange_surgery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexchange_surgery_type %>
+    <%= form.text_field :sexchange_surgery_type, id: :person_sexchange_surgery_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amputation %>
+    <%= form.check_box :amputation, id: :person_amputation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amputation_type %>
+    <%= form.text_field :amputation_type, id: :person_amputation_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chronic_disease %>
+    <%= form.check_box :chronic_disease, id: :person_chronic_disease %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chronic_disease_type %>
+    <%= form.text_field :chronic_disease_type, id: :person_chronic_disease_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prothesis %>
+    <%= form.check_box :prothesis, id: :person_prothesis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prothesis_type %>
+    <%= form.text_field :prothesis_type, id: :person_prothesis_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :glasses %>
+    <%= form.check_box :glasses, id: :person_glasses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_lens %>
+    <%= form.check_box :contact_lens, id: :person_contact_lens %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diopters %>
+    <%= form.check_box :diopters, id: :person_diopters %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight, id: :person_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :height %>
+    <%= form.text_field :height, id: :person_height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skin_type %>
+    <%= form.text_field :skin_type, id: :person_skin_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eye_color %>
+    <%= form.text_field :eye_color, id: :person_eye_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hair_type %>
+    <%= form.text_field :hair_type, id: :person_hair_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hair_color %>
+    <%= form.text_field :hair_color, id: :person_hair_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_hair %>
+    <%= form.text_field :facial_hair, id: :person_facial_hair %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body_hair %>
+    <%= form.check_box :body_hair, id: :person_body_hair %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tattoos %>
+    <%= form.check_box :tattoos, id: :person_tattoos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tattoos_type %>
+    <%= form.text_field :tattoos_type, id: :person_tattoos_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :piercings %>
+    <%= form.check_box :piercings, id: :person_piercings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :piercings_type %>
+    <%= form.text_field :piercings_type, id: :person_piercings_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_moles %>
+    <%= form.check_box :facial_moles, id: :person_facial_moles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_moles_type %>
+    <%= form.text_field :facial_moles_type, id: :person_facial_moles_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_birth_marks %>
+    <%= form.check_box :facial_birth_marks, id: :person_facial_birth_marks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_birth_marks_type %>
+    <%= form.text_field :facial_birth_marks_type, id: :person_facial_birth_marks_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_scars %>
+    <%= form.check_box :facial_scars, id: :person_facial_scars %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facial_scars_type %>
+    <%= form.text_field :facial_scars_type, id: :person_facial_scars_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_moles %>
+    <%= form.check_box :hands_moles, id: :person_hands_moles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_moles_type %>
+    <%= form.text_field :hands_moles_type, id: :person_hands_moles_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_birth_marks %>
+    <%= form.check_box :hands_birth_marks, id: :person_hands_birth_marks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_birth_marks_type %>
+    <%= form.text_field :hands_birth_marks_type, id: :person_hands_birth_marks_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_scars %>
+    <%= form.check_box :hands_scars, id: :person_hands_scars %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hands_scars_type %>
+    <%= form.text_field :hands_scars_type, id: :person_hands_scars_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :physical_disabilities %>
+    <%= form.check_box :physical_disabilities, id: :person_physical_disabilities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :physical_disabilities_type %>
+    <%= form.text_field :physical_disabilities_type, id: :person_physical_disabilities_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mental_disabilities %>
+    <%= form.check_box :mental_disabilities, id: :person_mental_disabilities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mental_disabilities_string_type %>
+    <%= form.text_field :mental_disabilities_string_type, id: :person_mental_disabilities_string_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mental_illness %>
+    <%= form.check_box :mental_illness, id: :person_mental_illness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mental_illness_type %>
+    <%= form.text_field :mental_illness_type, id: :person_mental_illness_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sight_disabilites %>
+    <%= form.check_box :sight_disabilites, id: :person_sight_disabilites %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sight_disabilities_type %>
+    <%= form.text_field :sight_disabilities_type, id: :person_sight_disabilities_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ear_disabilities %>
+    <%= form.check_box :ear_disabilities, id: :person_ear_disabilities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ear_disabilities_type %>
+    <%= form.text_field :ear_disabilities_type, id: :person_ear_disabilities_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ethnicity %>
+    <%= form.text_field :ethnicity, id: :person_ethnicity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_document %>
+    <%= form.text_field :id_document, id: :person_id_document %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_type %>
+    <%= form.text_field :id_type, id: :person_id_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_photo %>
+    <%= form.text_field :id_photo, id: :person_id_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :biography_municipality %>
+    <%= form.text_field :biography_municipality, id: :person_biography_municipality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :biography_city %>
+    <%= form.text_field :biography_city, id: :person_biography_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :biography_state %>
+    <%= form.text_field :biography_state, id: :person_biography_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :biography_country %>
+    <%= form.text_field :biography_country, id: :person_biography_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activist %>
+    <%= form.check_box :activist, id: :person_activist %>
+  </div>
+
+  <div class="field">
+    <%= form.label :journalist %>
+    <%= form.check_box :journalist, id: :person_journalist %>
+  </div>
+
+  <div class="field">
+    <%= form.label :migrant %>
+    <%= form.check_box :migrant, id: :person_migrant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :occupation %>
+    <%= form.text_field :occupation, id: :person_occupation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.text_field :position, id: :person_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_date %>
+    <%= form.date_select :event_date, id: :person_event_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_time %>
+    <%= form.time_select :event_time, id: :person_event_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_street %>
+    <%= form.text_field :event_street, id: :person_event_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_street_number %>
+    <%= form.text_field :event_street_number, id: :person_event_street_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_neighborhood %>
+    <%= form.text_field :event_neighborhood, id: :person_event_neighborhood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_municipality %>
+    <%= form.text_field :event_municipality, id: :person_event_municipality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_city %>
+    <%= form.text_field :event_city, id: :person_event_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_postal %>
+    <%= form.number_field :event_postal, id: :person_event_postal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_state %>
+    <%= form.text_field :event_state, id: :person_event_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_country %>
+    <%= form.text_field :event_country, id: :person_event_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_date %>
+    <%= form.date_select :ls_date, id: :person_ls_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_time %>
+    <%= form.time_select :ls_time, id: :person_ls_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_street %>
+    <%= form.text_field :ls_street, id: :person_ls_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_street_number %>
+    <%= form.text_field :ls_street_number, id: :person_ls_street_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_neighborhood %>
+    <%= form.text_field :ls_neighborhood, id: :person_ls_neighborhood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_municipality %>
+    <%= form.text_field :ls_municipality, id: :person_ls_municipality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_city %>
+    <%= form.text_field :ls_city, id: :person_ls_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_postal %>
+    <%= form.number_field :ls_postal, id: :person_ls_postal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_state %>
+    <%= form.text_field :ls_state, id: :person_ls_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_country %>
+    <%= form.text_field :ls_country, id: :person_ls_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_clothes %>
+    <%= form.check_box :ls_clothes, id: :person_ls_clothes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_clothes_top %>
+    <%= form.text_field :ls_clothes_top, id: :person_ls_clothes_top %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_clothes_top_color %>
+    <%= form.text_field :ls_clothes_top_color, id: :person_ls_clothes_top_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_clothes_bottom %>
+    <%= form.text_field :ls_clothes_bottom, id: :person_ls_clothes_bottom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ls_clothes_bottom_color %>
+    <%= form.text_field :ls_clothes_bottom_color, id: :person_ls_clothes_bottom_color %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dataset_name: MyString
+  dataset_owner: MyString
+  dataset_owner_contact: MyString
+  dataset_url: MyString
+  dataset_date_imported: 2017-10-03 23:55:19
+  dataset_update_continously: false
+  dataset_last_update: 2017-10-03 23:55:19
+
+two:
+  dataset_name: MyString
+  dataset_owner: MyString
+  dataset_owner_contact: MyString
+  dataset_url: MyString
+  dataset_date_imported: 2017-10-03 23:55:19
+  dataset_update_continously: false
+  dataset_last_update: 2017-10-03 23:55:19

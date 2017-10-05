@@ -1,0 +1,215 @@
+<p id="notice"><%= notice %></p>
+
+<h1>People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Second name</th>
+      <th>First apellido</th>
+      <th>Second apellido</th>
+      <th>Birth date</th>
+      <th>Birth country</th>
+      <th>Birth state</th>
+      <th>Nationality</th>
+      <th>Alias</th>
+      <th>Sex</th>
+      <th>Gender</th>
+      <th>Sexual orientation</th>
+      <th>Sexchange surgery</th>
+      <th>Sexchange surgery type</th>
+      <th>Amputation</th>
+      <th>Amputation type</th>
+      <th>Chronic disease</th>
+      <th>Chronic disease type</th>
+      <th>Prothesis</th>
+      <th>Prothesis type</th>
+      <th>Glasses</th>
+      <th>Contact lens</th>
+      <th>Diopters</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Skin type</th>
+      <th>Eye color</th>
+      <th>Hair type</th>
+      <th>Hair color</th>
+      <th>Facial hair</th>
+      <th>Body hair</th>
+      <th>Tattoos</th>
+      <th>Tattoos type</th>
+      <th>Piercings</th>
+      <th>Piercings type</th>
+      <th>Facial moles</th>
+      <th>Facial moles type</th>
+      <th>Facial birth marks</th>
+      <th>Facial birth marks type</th>
+      <th>Facial scars</th>
+      <th>Facial scars type</th>
+      <th>Hands moles</th>
+      <th>Hands moles type</th>
+      <th>Hands birth marks</th>
+      <th>Hands birth marks type</th>
+      <th>Hands scars</th>
+      <th>Hands scars type</th>
+      <th>Physical disabilities</th>
+      <th>Physical disabilities type</th>
+      <th>Mental disabilities</th>
+      <th>Mental disabilities string type</th>
+      <th>Mental illness</th>
+      <th>Mental illness type</th>
+      <th>Sight disabilites</th>
+      <th>Sight disabilities type</th>
+      <th>Ear disabilities</th>
+      <th>Ear disabilities type</th>
+      <th>Ethnicity</th>
+      <th>Id document</th>
+      <th>Id type</th>
+      <th>Id photo</th>
+      <th>Biography municipality</th>
+      <th>Biography city</th>
+      <th>Biography state</th>
+      <th>Biography country</th>
+      <th>Activist</th>
+      <th>Journalist</th>
+      <th>Migrant</th>
+      <th>Occupation</th>
+      <th>Position</th>
+      <th>Event date</th>
+      <th>Event time</th>
+      <th>Event street</th>
+      <th>Event street number</th>
+      <th>Event neighborhood</th>
+      <th>Event municipality</th>
+      <th>Event city</th>
+      <th>Event postal</th>
+      <th>Event state</th>
+      <th>Event country</th>
+      <th>Ls date</th>
+      <th>Ls time</th>
+      <th>Ls street</th>
+      <th>Ls street number</th>
+      <th>Ls neighborhood</th>
+      <th>Ls municipality</th>
+      <th>Ls city</th>
+      <th>Ls postal</th>
+      <th>Ls state</th>
+      <th>Ls country</th>
+      <th>Ls clothes</th>
+      <th>Ls clothes top</th>
+      <th>Ls clothes top color</th>
+      <th>Ls clothes bottom</th>
+      <th>Ls clothes bottom color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.first_name %></td>
+        <td><%= person.second_name %></td>
+        <td><%= person.first_apellido %></td>
+        <td><%= person.second_apellido %></td>
+        <td><%= person.birth_date %></td>
+        <td><%= person.birth_country %></td>
+        <td><%= person.birth_state %></td>
+        <td><%= person.nationality %></td>
+        <td><%= person.alias %></td>
+        <td><%= person.sex %></td>
+        <td><%= person.gender %></td>
+        <td><%= person.sexual_orientation %></td>
+        <td><%= person.sexchange_surgery %></td>
+        <td><%= person.sexchange_surgery_type %></td>
+        <td><%= person.amputation %></td>
+        <td><%= person.amputation_type %></td>
+        <td><%= person.chronic_disease %></td>
+        <td><%= person.chronic_disease_type %></td>
+        <td><%= person.prothesis %></td>
+        <td><%= person.prothesis_type %></td>
+        <td><%= person.glasses %></td>
+        <td><%= person.contact_lens %></td>
+        <td><%= person.diopters %></td>
+        <td><%= person.weight %></td>
+        <td><%= person.height %></td>
+        <td><%= person.skin_type %></td>
+        <td><%= person.eye_color %></td>
+        <td><%= person.hair_type %></td>
+        <td><%= person.hair_color %></td>
+        <td><%= person.facial_hair %></td>
+        <td><%= person.body_hair %></td>
+        <td><%= person.tattoos %></td>
+        <td><%= person.tattoos_type %></td>
+        <td><%= person.piercings %></td>
+        <td><%= person.piercings_type %></td>
+        <td><%= person.facial_moles %></td>
+        <td><%= person.facial_moles_type %></td>
+        <td><%= person.facial_birth_marks %></td>
+        <td><%= person.facial_birth_marks_type %></td>
+        <td><%= person.facial_scars %></td>
+        <td><%= person.facial_scars_type %></td>
+        <td><%= person.hands_moles %></td>
+        <td><%= person.hands_moles_type %></td>
+        <td><%= person.hands_birth_marks %></td>
+        <td><%= person.hands_birth_marks_type %></td>
+        <td><%= person.hands_scars %></td>
+        <td><%= person.hands_scars_type %></td>
+        <td><%= person.physical_disabilities %></td>
+        <td><%= person.physical_disabilities_type %></td>
+        <td><%= person.mental_disabilities %></td>
+        <td><%= person.mental_disabilities_string_type %></td>
+        <td><%= person.mental_illness %></td>
+        <td><%= person.mental_illness_type %></td>
+        <td><%= person.sight_disabilites %></td>
+        <td><%= person.sight_disabilities_type %></td>
+        <td><%= person.ear_disabilities %></td>
+        <td><%= person.ear_disabilities_type %></td>
+        <td><%= person.ethnicity %></td>
+        <td><%= person.id_document %></td>
+        <td><%= person.id_type %></td>
+        <td><%= person.id_photo %></td>
+        <td><%= person.biography_municipality %></td>
+        <td><%= person.biography_city %></td>
+        <td><%= person.biography_state %></td>
+        <td><%= person.biography_country %></td>
+        <td><%= person.activist %></td>
+        <td><%= person.journalist %></td>
+        <td><%= person.migrant %></td>
+        <td><%= person.occupation %></td>
+        <td><%= person.position %></td>
+        <td><%= person.event_date %></td>
+        <td><%= person.event_time %></td>
+        <td><%= person.event_street %></td>
+        <td><%= person.event_street_number %></td>
+        <td><%= person.event_neighborhood %></td>
+        <td><%= person.event_municipality %></td>
+        <td><%= person.event_city %></td>
+        <td><%= person.event_postal %></td>
+        <td><%= person.event_state %></td>
+        <td><%= person.event_country %></td>
+        <td><%= person.ls_date %></td>
+        <td><%= person.ls_time %></td>
+        <td><%= person.ls_street %></td>
+        <td><%= person.ls_street_number %></td>
+        <td><%= person.ls_neighborhood %></td>
+        <td><%= person.ls_municipality %></td>
+        <td><%= person.ls_city %></td>
+        <td><%= person.ls_postal %></td>
+        <td><%= person.ls_state %></td>
+        <td><%= person.ls_country %></td>
+        <td><%= person.ls_clothes %></td>
+        <td><%= person.ls_clothes_top %></td>
+        <td><%= person.ls_clothes_top_color %></td>
+        <td><%= person.ls_clothes_bottom %></td>
+        <td><%= person.ls_clothes_bottom_color %></td>
+        <td><%= link_to 'Show', person %></td>
+        <td><%= link_to 'Edit', edit_person_path(person) %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person', new_person_path %>

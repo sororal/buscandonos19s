@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dataset name:</strong>
+  <%= @dataset.dataset_name %>
+</p>
+
+<p>
+  <strong>Dataset owner:</strong>
+  <%= @dataset.dataset_owner %>
+</p>
+
+<p>
+  <strong>Dataset owner contact:</strong>
+  <%= @dataset.dataset_owner_contact %>
+</p>
+
+<p>
+  <strong>Dataset url:</strong>
+  <%= @dataset.dataset_url %>
+</p>
+
+<p>
+  <strong>Dataset date imported:</strong>
+  <%= @dataset.dataset_date_imported %>
+</p>
+
+<p>
+  <strong>Dataset update continously:</strong>
+  <%= @dataset.dataset_update_continously %>
+</p>
+
+<p>
+  <strong>Dataset last update:</strong>
+  <%= @dataset.dataset_last_update %>
+</p>
+
+<%= render @dataset.people %>
+
+<%= link_to 'Registra una nueva persona', new_dataset_person_path(@dataset)  %>
+
+<%= link_to 'Edit', edit_dataset_path(@dataset) %> |
+<%= link_to 'Back', datasets_path %>
