@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171005232654) do
+ActiveRecord::Schema.define(version: 20171006133752) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -126,6 +126,8 @@ ActiveRecord::Schema.define(version: 20171005232654) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "dataset_id"
+    t.text "notes"
+    t.boolean "located"
     t.index ["dataset_id"], name: "index_people_on_dataset_id"
   end
 

@@ -14,9 +14,9 @@ class PeopleController < ApplicationController
   end
 
   # GET /people/new
-  # def new
-  #   @person = Person.new
-  # end
+  def new
+    @person = Person.new
+  end
 
   # GET /people/1/edit
   def edit
